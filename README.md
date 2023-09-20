@@ -14,6 +14,5 @@ Hatuna'Mi is a web application that helps users to send multiple guests invitati
 ![Example Image](images/1.png)
 ![Example Image](images/2.png)
 ![Example Image](images/3.png)
-![Example Image](images/4.png)
 
 Your guests will receive an email with a link to view the invitation. They can then RSVP by clicking on the link and entering their name and email address.
