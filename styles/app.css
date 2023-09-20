@@ -1,0 +1,56 @@
+.slide {
+    opacity: 0;
+    transition-duration: 0.5s ease;
+}
+
+.slide.active {
+    opacity: 1;
+    transition-duration: 0.5s;
+    transform: scale(1.05);
+}
+
+.svg-loader {
+    display: flex;
+    position: relative;
+    align-content: space-around;
+    justify-content: center;
+}
+
+.loader-svg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    fill: none;
+    stroke-width: 9px;
+    stroke-linecap: round;
+    stroke: #55cd6c;
+}
+
+.loader-svg.bg {
+    stroke-width: 6px;
+    stroke: #55cd6d54;
+}
+
+.animate {
+    stroke-dasharray: 242.6;
+    animation: fill-animation 1.2s cubic-bezier(1, 1, 1, 1) 0s infinite;
+}
+
+@keyframes fill-animation {
+    0% {
+        stroke-dasharray: 40 242.6;
+        stroke-dashoffset: 0;
+    }
+
+    60% {
+        stroke-dasharray: 141.3;
+        stroke-dashoffset: 141.3;
+    }
+
+    100% {
+        stroke-dasharray: 40 242.6;
+        stroke-dashoffset: 282.6;
+    }
+}
